@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { JamComponent } from './jam.component';
+
+describe('JamComponent', () => {
+  let component: JamComponent;
+  let fixture: ComponentFixture<JamComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [JamComponent]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(JamComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
