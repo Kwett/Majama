@@ -10,12 +10,12 @@ import { PrestationComponent } from './prestation/prestation.component';
 import { RoasterComponent } from './roaster/roaster.component';
 
 const routes: Routes = [
-  {path: "/", component: HomeComponent },
-  {path: "/jam", component: JamComponent },
-  {path: "/concert", component: ConcertComponent},
-  {path: "/news", component: NewsComponent},
-  {path: "/roaster", component: RoasterComponent},
-  {path: "/prestations", component: PrestationComponent},
+  {path: "", component: HomeComponent },
+  {path: "jam", component: JamComponent },
+  {path: "concert", component: ConcertComponent},
+  {path: "news", component: NewsComponent},
+  {path: "roaster", component: RoasterComponent},
+  {path: "prestations", component: PrestationComponent},
   {path: "contact", component: ContactComponent},
 
   {path: "**", component: PageNotFoundComponent},
