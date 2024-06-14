@@ -1,1 +1,11 @@
-<p>home works!</p>
+
+<link rel="stylesheet" href="/assets/style.css">
+<div class="title-container">
+  <h1>Majama</h1>
+</div>
+
+<div class="menu-container">
+  <div *ngFor="let card of menuCards" class="menu-card" id="{{card.image}}" (click)="navigateTo(card.route)">
+    <div class="menu-title"><h3>{{ card.title }}</h3></div>
+  </div>
+</div>

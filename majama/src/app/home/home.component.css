@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
+  height: 20vh;
+  display : flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.menu-container {
+  height : 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 25rem;
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d97c;
+  width: 100%;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+#jam {
+  background-image: url('/assets/images/jam.png')
+}
+
+#concert {
+  background-image: url('/assets/images/concert.png')
+}
+
+#news {
+  background-image: url('/assets/images/news.png')
+}
+
+#roaster {
+  background-image: url('/assets/images/roaster.png')
+}
+
+#presta {
+  background-image: url('/assets/images/presta.png')
+}
+
+#contact {
+  background-image: url('/assets/images/contact.png')
+}
