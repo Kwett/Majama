@@ -1,37 +1,33 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 .title-container {
-  height: 20vh;
+  margin-top: 5.5rem;
+  height: 30vh;
   display : flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .menu-container {
-  height : 70vh;
+  height : 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2%;
 }
 
 .menu-card {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 25rem;
-  width: 10rem;
+  height: 80%;
+  width: 12%;
   cursor: pointer;
   border-radius: 0.8rem;
-  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .menu-card:hover {
-  transform: scale(1.1);
-  transition-duration: 300ms;
+  transform: scale(1.15);
+  transition-duration: 0.5s;
 }
 
 .menu-title {
@@ -43,25 +39,31 @@ html, body {
 }
 
 #jam {
-  background-image: url('/assets/images/jam.png')
+  background-image: url('/assets/images/jam.png');
+  background-size: cover;
 }
 
 #concert {
-  background-image: url('/assets/images/concert.png')
+  background-image: url('/assets/images/concert.png');
+  background-size: cover;
 }
 
 #news {
-  background-image: url('/assets/images/news.png')
+  background-image: url('/assets/images/news.png');
+  background-size: cover;
 }
 
 #roaster {
-  background-image: url('/assets/images/roaster.png')
+  background-image: url('/assets/images/roaster.png');
+  background-size: cover;
 }
 
 #presta {
-  background-image: url('/assets/images/presta.png')
+  background-image: url('/assets/images/presta.png');
+  background-size: cover;
 }
 
 #contact {
-  background-image: url('/assets/images/contact.png')
+  background-image: url('/assets/images/contact.png');
+  background-size: cover;
 }
