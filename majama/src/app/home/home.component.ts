@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Card } from './models/card.model';
+import { MenuCard } from './models/menu-card.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  menuCards: Card[] = [
+  menuCards: MenuCard[] = [
     {title: 'Jam Session', image: 'jam', route: '/jam'},
     {title: 'Concerts', image: 'concert', route: '/concert'},
     {title: 'News', image: 'news', route: '/news'},

@@ -1,1 +1,26 @@
-<p>jam works!</p>
+<app-nav></app-nav>
+<div class = "card-container">
+  <div *ngFor="let card of jamCard" id="{{ card.place }}" class="jam-card">
+
+    <div class="date">
+      <h4 >{{ card.date | date: 'dd/MM/yyyy' }}</h4>
+    </div>
+
+    <div class="place">
+      <h3>{{ card.place }}</h3>
+
+    <div class="address">
+      <span *ngFor="let line of getAddressLines(card.address)">
+        {{ line }} <br>
+      </span>
+    </div>
+
+    <p>{{ card.timeStart }} - {{ card.timeStop }}</p>
+
+    <div class="rs-link">
+      <img src="/assets/icons/insta.svg">
+      <img src="/assets/icons/fb.svg">
+    </div>
+  </div>
+  </div>
+</div>

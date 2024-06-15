@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Bright';
+  src: url('/assets/fonts/Bright.ttf') format('truetype');
+}
 .title-container {
   margin-top: 5.5rem;
   height: 30vh;
@@ -25,9 +29,17 @@
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
+h3 {
+  text-transform: uppercase;
+  font-family: 'Bright';
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 .menu-card:hover {
   transform: scale(1.15);
   transition-duration: 0.5s;
+  text-decoration: underline;
 }
 
 .menu-title {
