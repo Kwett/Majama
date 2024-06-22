@@ -3,7 +3,7 @@
 <div class="page">
 <div class="scrollable-container">
   <div class = "card-container">
-    <div *ngFor="let card of jamCard" id="{{ card.id }}" class="jam-card">
+    <div *ngFor="let card of jamCard" id="{{ card.id }}" class="jam-card" (click)="navigateTo(card.id, card.date)">
 
       <div class="date">
         <h4 >{{ card.date | date: 'dd/MM/yyyy' }}</h4>

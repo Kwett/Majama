@@ -12,6 +12,7 @@ import { PrestationComponent } from './prestation/prestation.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavComponent } from './nav/nav.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavComponent } from './nav/nav.component';
     PrestationComponent,
     ContactComponent,
     PageNotFoundComponent,
-    NavComponent
+    NavComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,

@@ -8,10 +8,12 @@ import { NewsComponent } from './news/news.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PrestationComponent } from './prestation/prestation.component';
 import { RoasterComponent } from './roaster/roaster.component';
+import { EventComponent } from './event/event.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent },
   {path: "jam", component: JamComponent },
+  {path: "event/:id", component: EventComponent},
   {path: "concert", component: ConcertComponent},
   {path: "news", component: NewsComponent},
   {path: "roaster", component: RoasterComponent},

@@ -92,4 +92,8 @@ export class JamComponent {
   getAddressKeys(address: Address) : string[] {
     return Object.keys(address);
   }
+
+  navigateTo(id: string, date: Date) {
+    this.router.navigate(['/event', id, date]);
+  }
 }
