@@ -1,7 +1,8 @@
 :root {
-  background-image: url('/assets/images/background.png');
+  background-image: url('/assets/images/backgrounds/background.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
 }

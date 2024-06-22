@@ -12,7 +12,8 @@ import { Address } from './models/address.model';
 export class JamComponent {
 
   jamCard: JamCard[] = [
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         { firstLine: '35 rue de Méhul',
@@ -20,7 +21,8 @@ export class JamComponent {
       timeStart: this.time(16, 0),
       timeStop: this.time(19, 0)},
 
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         {firstLine: '35 rue de Méhul',
@@ -28,7 +30,8 @@ export class JamComponent {
       timeStart: this.time(16, 0),
       timeStop: this.time(19, 0)},
 
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         {firstLine: '35 rue de Méhul',
@@ -37,7 +40,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         {firstLine: '35 rue de Méhul',
@@ -46,7 +50,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         {firstLine: '35 rue de Méhul',
@@ -55,7 +60,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { date: new Date('2024-05-03'),
+    { id: 'gallia',
+      date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
         {firstLine: '35 rue de Méhul',

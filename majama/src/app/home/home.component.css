@@ -51,31 +51,31 @@ h3 {
 }
 
 #jam {
-  background-image: url('/assets/images/jam.png');
+  background-image: url('/assets/images/home/jam.png');
   background-size: cover;
 }
 
 #concert {
-  background-image: url('/assets/images/concert.png');
+  background-image: url('/assets/images/home/concert.png');
   background-size: cover;
 }
 
 #news {
-  background-image: url('/assets/images/news.png');
+  background-image: url('/assets/images/home/news.png');
   background-size: cover;
 }
 
 #roaster {
-  background-image: url('/assets/images/roaster.png');
+  background-image: url('/assets/images/home/roaster.png');
   background-size: cover;
 }
 
 #presta {
-  background-image: url('/assets/images/presta.png');
+  background-image: url('/assets/images/home/presta.png');
   background-size: cover;
 }
 
 #contact {
-  background-image: url('/assets/images/contact.png');
+  background-image: url('/assets/images/home/contact.png');
   background-size: cover;
 }
