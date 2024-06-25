@@ -48,6 +48,7 @@ h3 {
   background-color: #d9d9d97c;
   width: 100%;
   border-radius: 0 0 0.8rem 0.8rem;
+  backdrop-filter: blur(2px);
 }
 
 #jam {

@@ -11,8 +11,12 @@ import { Address } from './models/address.model';
 })
 export class JamComponent {
 
+  isJamSelected = false;
+  selectedJamId: number | null = null;
+
   jamCard: JamCard[] = [
-    { id: 'gallia',
+    { id: '1',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -21,7 +25,8 @@ export class JamComponent {
       timeStart: this.time(16, 0),
       timeStop: this.time(19, 0)},
 
-    { id: 'gallia',
+    { id: '2',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -30,7 +35,8 @@ export class JamComponent {
       timeStart: this.time(16, 0),
       timeStop: this.time(19, 0)},
 
-    { id: 'gallia',
+    { id: '3',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -40,7 +46,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { id: 'gallia',
+    { id: '4',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -50,7 +57,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { id: 'gallia',
+    { id: '5',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -60,7 +68,8 @@ export class JamComponent {
       timeStop: this.time(19, 0)},
 
 
-    { id: 'gallia',
+    { id: '6',
+      placeId: 'gallia',
       date: new Date('2024-05-03'),
       place: 'le Gallia',
       address:
@@ -93,7 +102,7 @@ export class JamComponent {
     return Object.keys(address);
   }
 
-  navigateTo(id: string, date: Date) {
-    this.router.navigate(['/event', id, date]);
+  toggleJam(id: string) {
+    return !this.isJamSelected;
   }
 }

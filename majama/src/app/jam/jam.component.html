@@ -2,8 +2,8 @@
 <app-nav></app-nav>
 <div class="page">
 <div class="scrollable-container">
-  <div class = "card-container">
-    <div *ngFor="let card of jamCard" id="{{ card.id }}" class="jam-card" (click)="navigateTo(card.id, card.date)">
+  <div *ngIf=!isJamSelected class="card-container">
+    <div *ngFor="let card of jamCard" id="{{ card.place }}" class="jam-card {{ card.placeId }}" (click)="toggleJam(card.id)">
 
       <div class="date">
         <h4 >{{ card.date | date: 'dd/MM/yyyy' }}</h4>
@@ -26,6 +26,9 @@
       </div>
     </div>
     </div>
+  </div>
+  <div *ngIf=isJamSelected class="jam-container">
+
   </div>
 </div>
 </div>
