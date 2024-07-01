@@ -3,22 +3,23 @@
 <div class="page">
 <div class="scrollable-container">
   <div *ngIf=!isJamSelected class="card-container">
-    <div *ngFor="let card of jamCard" id="{{ card.place }}" class="jam-card {{ card.placeId }}" (click)="toggleJam(card.id)">
+    <div *ngFor="let card of jamCard" class="jam-card" style="background-image: url('/assets/images/jam/{{ card.place.background }}');">
 
       <div class="date">
-        <h4 >{{ card.date | date: 'dd/MM/yyyy' }}</h4>
+        <h4 >{{ card.timeStart | date: 'dd/MM/yyyy' }}</h4>
       </div>
 
       <div class="place">
-        <h3>{{ card.place }}</h3>
+        <h3>{{ card.place.name }}</h3>
 
       <div class="address">
-        <span *ngFor="let line of getAddressLines(card.address)">
-          {{ line }} <br>
+        <span>
+          {{ card.place.addressNumber }} {{ card.place.road}} <br>
+          {{ card.place.city}}
         </span>
       </div>
 
-      <p>{{ card.timeStart }} - {{ card.timeStop }}</p>
+      <p>{{ card.timeStart | date: 'HH:mm' : '+0000' }} - {{ card.timeEnd | date: 'HH:mm' : '+0000' }}</p>
 
       <div class="rs-link">
         <img src="/assets/icons/insta.svg">

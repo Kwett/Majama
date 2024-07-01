@@ -1,11 +1,15 @@
-import { Address } from './address.model';
-
 export interface JamCard {
-  id: string;
-  placeId: string;
-  date: Date;
-  place: string;
-  address: Address;
-  timeStart: string;
-  timeStop: string;
+  '@id': string;
+  '@type': string;
+  place: {
+    '@id': string;
+    '@type': string;
+    name: string;
+    addressNumber: number;
+    road: string;
+    city: string;
+    background: string;
+  };
+  timeStart: Date;
+  timeEnd: Date;
 }
